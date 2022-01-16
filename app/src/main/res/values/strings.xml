@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">validation_jan16_trint01</string>
+    <string name="sign_in">Sign In</string>
+    <string name="speak_friend_enter">Speak, friend, and enter</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="oops_text">Oops...couldn\'t Sign in</string>
+    <string name="incorrect_login_text">Your username and password don\'t match. Please Try Again.</string>
+    <string name="try_again">Try Again</string>
+    <string name="all_inboxes">All inboxes</string>
+    <string name="i_cloud">ICloud</string>
+    <string name="gmail">Gmail</string>
+    <string name="hotmail">Hotmail</string>
+    <string name="vip">VIP</string>
+    <string name="secure">Secure</string>
+    <string name="notifications">Notifications</string>
+</resources>
