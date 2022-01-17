@@ -4,6 +4,18 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/done"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tvAllInboxes"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tvAllInboxes"
         android:layout_width="0dp"
@@ -11,11 +23,11 @@
         android:text="@string/all_inboxes"
         android:textSize="32sp"
 
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnDone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/tvICloud"
-        app:layout_constraintVertical_chainStyle="packed"/>
+        />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tvICloud"

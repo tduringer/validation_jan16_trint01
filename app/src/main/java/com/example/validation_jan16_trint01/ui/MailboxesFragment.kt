@@ -1,6 +1,7 @@
 package com.example.validation_jan16_trint01.ui
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -19,6 +20,15 @@ class MailboxesFragment : Fragment() {
     ): View {
         _binding = FragmentMailboxesBinding.inflate(inflater, container, false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.btnDone.setOnClickListener {
+            Log.d("btnDone", "btnDone clicked")
+            parentFragmentManager.popBackStack()
+            Log.d("Popped Back Stack", "popBackStack() executed")
+        }
     }
 
     override fun onDestroyView() {

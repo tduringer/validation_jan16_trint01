@@ -27,7 +27,7 @@ class OopsFragment : Fragment() {
         binding.btnTryAgain.setOnClickListener {
             Log.d("Try Again", "btnTryAgain clicked")
             parentFragmentManager.popBackStack()
-            Log.d("Popped Back Stack", "popBackStack executed")
+            Log.d("Popped Back Stack", "popBackStack() executed")
         }
     }
 
